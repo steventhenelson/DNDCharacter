@@ -1,0 +1,14 @@
+C:\Users\snelso4x\Desktop\Documents\Programs\DND\DND\bin\Debug\DND.exe.config
+C:\Users\snelso4x\Desktop\Documents\Programs\DND\DND\bin\Debug\DND.exe
+C:\Users\snelso4x\Desktop\Documents\Programs\DND\DND\bin\Debug\DND.pdb
+C:\Users\snelso4x\Desktop\Documents\Programs\DND\DND\obj\Debug\DND.csprojResolveAssemblyReference.cache
+C:\Users\snelso4x\Desktop\Documents\Programs\DND\DND\obj\Debug\DND.csproj.CoreCompileInputs.cache
+C:\Users\snelso4x\Desktop\Documents\Programs\DND\DND\obj\Debug\DND.exe
+C:\Users\snelso4x\Desktop\Documents\Programs\DND\DND\obj\Debug\DND.pdb
+C:\Users\Nelson\OneDrive\Projects\DND\DND\obj\Debug\DND.csprojAssemblyReference.cache
+C:\Users\Nelson\OneDrive\Projects\DND\DND\obj\Debug\DND.csproj.CoreCompileInputs.cache
+C:\Users\Nelson\OneDrive\Projects\DND\DND\obj\Debug\DND.exe
+C:\Users\Nelson\OneDrive\Projects\DND\DND\obj\Debug\DND.pdb
+C:\Users\Nelson\OneDrive\Projects\DND\DND\bin\Debug\DND.exe.config
+C:\Users\Nelson\OneDrive\Projects\DND\DND\bin\Debug\DND.exe
+C:\Users\Nelson\OneDrive\Projects\DND\DND\bin\Debug\DND.pdb

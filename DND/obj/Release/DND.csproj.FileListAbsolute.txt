@@ -1,0 +1,7 @@
+C:\Users\snelso4x\Desktop\Documents\Programs\DND\DND\bin\Release\DND.exe.config
+C:\Users\snelso4x\Desktop\Documents\Programs\DND\DND\bin\Release\DND.exe
+C:\Users\snelso4x\Desktop\Documents\Programs\DND\DND\bin\Release\DND.pdb
+C:\Users\snelso4x\Desktop\Documents\Programs\DND\DND\obj\Release\DND.csprojResolveAssemblyReference.cache
+C:\Users\snelso4x\Desktop\Documents\Programs\DND\DND\obj\Release\DND.csproj.CoreCompileInputs.cache
+C:\Users\snelso4x\Desktop\Documents\Programs\DND\DND\obj\Release\DND.exe
+C:\Users\snelso4x\Desktop\Documents\Programs\DND\DND\obj\Release\DND.pdb
