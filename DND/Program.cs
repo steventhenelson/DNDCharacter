@@ -24,7 +24,10 @@ namespace DND
 
             Display();
 
-            ExportToPDF.Export();
+            Character.Export();
+            Console.WriteLine("\nExporting character to file");
+            //Console.WriteLine("Data exported to C:\\Users\\snelso4x\\Desktop\\character.txt");
+            Console.WriteLine("Data exported to C:\\character.txt");
             // Keep the console window open in debug mode.
             Console.Write("Press any key to exit.");
             Console.ReadKey();
@@ -66,7 +69,7 @@ namespace DND
             {
                 value = parsed;
             }
-            else value = 1;
+            else value = Roll(12);
             //return here
 
             //int value = int.Parse(Console.ReadLine());
@@ -131,7 +134,7 @@ namespace DND
             {
                 value = parsed;
             }
-            else value = 1;
+            else value = Roll(13);
 
 
             //int value = int.Parse(Console.ReadLine());
@@ -219,7 +222,7 @@ namespace DND
             {
                 value = parsed;
             }
-            else value = 1;
+            else value = Roll(9);
 
             //int value = int.Parse(Console.ReadLine());
             if (value >= 0 && value <= 9)
@@ -279,8 +282,17 @@ namespace DND
             int[] rolls = { 15, 14, 13, 12, 10, 8 };
             string[] stats = { "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" };
 
-            Console.WriteLine("(1) Custom Stats or (2) Default stats? ");
-            int value = int.Parse(Console.ReadLine());
+            Console.WriteLine("Pick your preference: ");
+            Console.Write("(1) Custom Stats \n(2) Default stats? ");
+            string input = Console.ReadLine();
+            int parsed;
+            // turn into a methos with the range as an input
+            if (int.TryParse(input, out parsed))
+            {
+                value = parsed;
+            }
+            else value = 2;
+                 
             if (value == 1)
             {
                 Console.WriteLine("Generating custom values");
@@ -289,12 +301,8 @@ namespace DND
                     rolls[i] = RollBaseStats(6);
                 }
             }
-            else if (value == 2)
-            {
-                Console.WriteLine("Default it is");
-            }
-            else ChooseBaseStats();
-        
+            else Console.WriteLine("Default it is");
+            
             for (k = 0; k < 6; ++k)
             {
                 Console.Clear();
@@ -308,9 +316,14 @@ namespace DND
 
                 Console.Write("Which of the following stats do you want for " + stats[k] + "? ");
 
+                string option = Console.ReadLine();
+                // turn into a methos with the range as an input
+                if (int.TryParse(option, out parsed))
+                {
+                    value = parsed;
+                }
+                else value = 1;
 
-
-                value = int.Parse(Console.ReadLine());
                 if (value >= 1 && value <= 6)
                 {
                     if (k == 0) Character.Strength = rolls[value - 1];

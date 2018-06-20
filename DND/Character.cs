@@ -1,4 +1,7 @@
-﻿namespace DND
+﻿using System;
+using System.IO;
+
+namespace DND
 {
     public partial class Character
     {
@@ -67,5 +70,53 @@
         public static int SleightOfHand { get => sleightOfHand; set => sleightOfHand = value; }
         public static int Stealth { get => stealth; set => stealth = value; }
         public static int Survival { get => survival; set => survival = value; }
+
+        public static void Export()
+        {
+            //string path = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
+            //path = Path.Combine(path, "\\character.txt");
+
+            //string path = @"C:\\Users\\snelso4x\\Desktop\\character.txt"; //This one works
+            string path = @"C:\\DND\\character.txt";
+            if (File.Exists(path))
+            {
+                File.Delete(path);
+            }
+            else if (!File.Exists(path))
+            {
+                // Create a file to write to.
+                using (StreamWriter sw = File.CreateText(path))
+                {
+                    sw.WriteLine("Player Name...: " + pName);
+                    sw.WriteLine("Character Name: " + cName);
+                    sw.WriteLine("Class.........: " + charClass);
+                    sw.WriteLine("Level.........: " + level);
+                    sw.WriteLine("Race..........: " + race);
+                    sw.WriteLine("Alignment.....: " + alignment);
+                    sw.WriteLine("Experience....: " + xp);
+                    sw.WriteLine("Strength......: " + strength);
+                    sw.WriteLine("Dexterity.....: " + dexterity);
+                    sw.WriteLine("Constituiton..: " + constitution);
+                    sw.WriteLine("Intelligence..: " + intelligence);
+                    sw.WriteLine("Wisdom........: " + wisdom);
+                    sw.WriteLine("Charisma......: " + charisma);
+                    sw.WriteLine("" );
+                    sw.WriteLine("" );
+                    //sw.WriteLine("" + );
+                    sw.Flush();
+                    sw.Close();
+                }
+            }
+            /*
+            // Open the file to read from.
+            using (StreamReader sr = File.OpenText(path))
+            {
+                string s = "";
+                while ((s = sr.ReadLine()) != null)
+                {
+                    Console.WriteLine(s);
+                }
+            }*/
+        }
     }
 }
